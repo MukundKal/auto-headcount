@@ -1,12 +1,15 @@
 # USAGE
 # To read and write back out to video:
-# python AA_people_counter.py --prototxt ml_model/AA_counter.prototxt \
-#	--model ml_model/AA_counter.caffemodel --input videos/example_01.mp4 \
+#   python main.py
+#   --prototxt ml_model/AA_counter.prototxt
+#	--model ml_model/AA_counter.caffemodel
+#   --input videos/example_01.mp4
 #	--output output/output_01.avi
 #
 # To read from webcam and write back out to disk:
-# python AA_people_counter.py --prototxt ml_model/AA_counter.prototxt \
-#	--model ml_model/AA_counter.caffemodel \
+# python main.py
+# --prototxt ml_model/AA_counter.prototxt
+#	--model ml_model/AA_counter.caffemodel
 #	--output output/webcam_output.avi
 
 # import the necessary packages
@@ -265,7 +268,7 @@ while True:
     key = cv2.waitKey(1) & 0xFF
 
     # if the `q` key was pressed, break from the loop
-    if key == ord("q"):
+    if key == ord("r"):
         break
 
     # increment the total number of frames processed thus far and
