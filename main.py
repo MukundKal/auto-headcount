@@ -110,6 +110,8 @@ while True:
     # the frame from BGR to RGB for dlib
     frame = imutils.resize(frame, width=500)
     rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+    cv2.putText(frame, "SEN AA System: ON",
+                (300, 20),  cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 0), 2)
 
     # if the frame dimensions are empty, set them
     if W is None or H is None:
@@ -210,6 +212,7 @@ while True:
         text = "ID {}".format(objectID)
         cv2.putText(frame, text, (centroid[0] - 10, centroid[1] - 10),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+
         cv2.circle(frame, (centroid[0], centroid[1]), 4, (0, 255, 0), -1)
 
     info = [
