@@ -1,4 +1,4 @@
-# Auto-headcount
+# Auto-Attendance
 Backend for an automatic attendence system that counts number of people in a room.
 
 ![RUNNING ON A SEC. CAMERA](1.PNG)
@@ -7,4 +7,4 @@ Backend for an automatic attendence system that counts number of people in a roo
 -------------------------------
 
 
-![RESULTS FROM THE ML MODEL](2.png)
+![RESULTS FROM THE ML MODEL](2.PNG)
