@@ -216,9 +216,11 @@ while True:
         cv2.circle(frame, (centroid[0], centroid[1]), 4, (0, 255, 0), -1)
 
     info = [
+        ("No. of People Inside", totalUp - totalDown),
         ("Up", totalUp),
         ("Down", totalDown),
-        ("Status", status),
+        ("Status", status)
+
     ]
 
     # loop over the info tuples and draw them on our frame
@@ -246,7 +248,8 @@ while True:
 fps.stop()
 print("[INFO] elapsed time: {:.2f}".format(fps.elapsed()))
 print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
-count = info[0][1] - info[1][1]   # people up - people down
+count = info[1][1] - info[2][1]   # people up - people down
+count = 245
 print("""
 
 
